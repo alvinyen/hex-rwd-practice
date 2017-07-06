@@ -1,0 +1,46 @@
+section.comments {
+    background-color: #EEE9E7;
+    .container {
+        max-width: 1049px;
+        margin: 0 auto;
+        .comments-section-title {
+            display: inline-block;
+            font-size: 24px;
+            color: #3D1101;
+            margin-top: 50px;
+            margin-bottom: 32px;
+        }
+        ul.comments-list {
+            display: flex;
+            li {
+                display: flex;
+                margin-right: 20px;
+                padding-bottom: 50px;
+                img { 
+                    border-radius: 50%; 
+                    width: 67px;
+                    height: 67px;
+                    margin-right: 13px;
+                }
+                .comment-section {
+                    width: 220px;
+                    color: #3D1101;
+                    .name {
+                        margin-top: 24px;
+                        font-size: 18px;
+                    }
+                    .content {
+                        margin-top: 22px;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    .nickname {
+                        margin-top: 16px;
+                        font-size: 16px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
