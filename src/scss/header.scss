@@ -1,0 +1,73 @@
+@import "mixin";
+@import "font-awesome/font-awesome";
+
+header {
+  // border-color: blue;
+  background-color: black;
+  .container {
+    background-image: url(../images/header_desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1049px;
+    height: 420px;
+    margin: 0 auto;
+    .top {
+      height: 56px;
+      display: flex;
+      justify-content: space-between;
+      h1.icon {
+        margin-left: 42px;
+        display: flex;
+        align-items: center;
+        a {
+          border: none;
+          display: block;
+          width: 120px;
+          height: 24px;
+          background-image: url(../images/logo_w@2x.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          @include textReplacement;
+        }
+      }
+      ul.menu {
+        display: flex;
+        margin-right: 48px;
+        align-items: center;
+        li {
+          font-size: 16px;
+          margin-right: 30px;
+          a {
+            display: block;
+            border-color: pink;
+            color: white;
+            // height: 56px;
+          }
+        }
+      }
+    }
+    .bottom {
+      border-color: green;
+      .promotion {
+          width: 480px;
+          height: 152px;
+          margin: 0 auto;
+          margin-top: 67px;
+          margin-bottom: 145px;
+          color: white;
+          background: rgba(0,0,0,0.35);
+          h2.title {
+              font-weight: 300;
+              font-size: 36px;
+              margin-top: 20px;
+          }
+          .content {
+              font-weight: 100;
+              line-height: 1.5;
+              margin-top: 16px;
+              margin-bottom: 26px;
+          }
+      }
+    }
+  }
+}
