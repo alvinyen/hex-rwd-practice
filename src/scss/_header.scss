@@ -8,7 +8,7 @@ header {
     background-image: url(../images/header_desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1049px;
+    max-width: 1049px;
     height: 420px;
     margin: 0 auto;
     .top {
@@ -42,6 +42,9 @@ header {
             border-color: pink;
             color: white;
             // height: 56px;
+            &:hover {
+              color: red;
+            }
           }
         }
       }
