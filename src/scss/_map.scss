@@ -1,7 +1,7 @@
 section.map {
     background: rgba(250,250,250,0.70);
     .container {
-        width: 1049px;
+        max-width: 1049px;
         margin: 0 auto;
         padding: 50px 0;
         .title {
@@ -16,15 +16,16 @@ section.map {
             img.map {
                 width: 462px;
                 height: 388px;
-                // margin-right: 20px;
+                margin-right: 20px;
             }
             form {
                 // border: 2px solid red;
-                width: 520px;
+                width: 100%;
                 color: #3D1101;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                padding-right: 10px;
                 label, input {
                     display: block;
                     text-align: left;
