@@ -1,0 +1,62 @@
+@import 'mixin';
+
+footer {
+    background-color: #EEE9E7;
+    .container {
+        max-width: 1049px;
+        margin: 0 auto;
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        .about-section {
+            display: flex;
+            .title, .content, ul.content li {
+                text-align: left;
+                color: #3D1101;
+                line-height: 24px;
+            }
+            .title {
+                margin-bottom: 16px;
+                font-size: 24px;
+            }
+            .about {
+                width: 299px;
+                margin-right: 21px;
+            }
+        }
+        .icon-and-social-menu {
+            h2.icon {
+                display: inline-block;
+                background-image: url(../images/logo_in_footer.png);
+                width: 210px;
+                height: 51px;
+                @include textReplacement;
+                margin-bottom: 22px;
+                text-align: right;
+                // border: 2px solid red;
+            }
+            .social-menu {
+                display: flex;
+                font-size: 36px;
+                // border: 2px solid red;
+                display: flex;
+                justify-content: flex-end;
+                .fa {
+                    margin-right: 12px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+                .fa-facebook-square {
+                    margin-right: 0;
+                    color: #3A5795;
+                }
+                .fa-twitter-square {
+                    color: #41ABE1;
+                }
+                .fa-google-plus-square {
+                    color: #DB4437;
+                }
+            }
+        }
+    }
+}

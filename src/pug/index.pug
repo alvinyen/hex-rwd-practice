@@ -11,7 +11,7 @@ body
         .container
             .top
                 h1.icon 
-                    a(href="") 六角西餐廳
+                    a(href="") 銓寶西餐廳
                 ul.menu
                     li
                         a(href="") 特色
@@ -72,31 +72,43 @@ body
                         .nickname --美麗萬分
     section.map
         .container
-            .title 我們的位置不太夠坐<br>要不要先定位呢？
+            .title 我們的位置不太夠坐<br>要不要先訂位呢？
             .content
                 img.map(src="images/Map.png", alt="")
                 form
-                    label(for="name") 姓名
-                    input(type="text" placeholder="畢業季尾牙" id="name")
-                    label(for="phone") 電話
-                    input(type="tel" placeholder="02-1234567" id="phone")
-                    label(for="email") 信箱
-                    input(type="email" placeholder="aaa123@gmail.com" id="email")
-                    label(for="participants") 人數
-                    input(type="number" placeholder="請輸入參加人數" id="participants")
+                    .name-input-section
+                        label(for="name") 姓名
+                        input(type="text" placeholder="畢業季尾牙" id="name")
+                    .phone-input-section
+                        label(for="phone") 電話
+                        input(type="tel" placeholder="02-1234567" id="phone")
+                    .email-input-section
+                        label(for="email") 信箱
+                        input(type="email" placeholder="aaa123@gmail.com" id="email")
+                    .participants-input-section
+                        label(for="participants") 人數
+                        input(type="number" placeholder="請輸入參加人數" id="participants")
                     //- label(for="vegetarian-y") 是否需要素食
                     //- #[input(type="radio" id="vegetarian-y" name="vegetarian" value="y")] 是
                     //- #[input(type="radio" id="vegetarian-n" name="vegetarian" value="n")] 否
                     .btns-section
                         button.cancel(type="submit") 取消
                         button.submit(type="submit") 送出
-    footer  
-        .about
-            .title
-            .content
-        .contact
-            .title
-            ul.content
-        .icon-and-social-menu
-            h2.icon
-            ul.social-menu
+    footer
+        .container
+            .about-section  
+                .about
+                    .title 關於 六角西餐廳
+                    .content Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. 
+                .contact
+                    .title 聯絡方式
+                    ul.content
+                        li •  高雄市中正五路到底
+                        li •  +886 886 886
+                        li •  service@hexschool.com
+            .icon-and-social-menu
+                h2.icon 銓寶西餐廳
+                .social-menu
+                    i.fa.fa-google-plus-square(aria-hidden="true")
+                    i.fa.fa-twitter-square(aria-hidden="true")
+                    i.fa.fa-facebook-square(aria-hidden="true")
