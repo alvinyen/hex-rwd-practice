@@ -1,14 +1,14 @@
 section.chef {
     background-color: #3D1101;
     .container {
-        max-width: 1049px;
+        max-width: 960px;
         margin: 0 auto;
+        padding: 0 20px;
         display: flex;
         img {
-            max-width: 470px;
+            max-width: 49%;
             // height: 460px;
             margin-right: 25px;
-            margin-left: 10px;
         }
         .chef-description {
             color: #EFE9E7;
@@ -28,7 +28,7 @@ section.chef {
             .content {
                 font-size: 16px;
                 text-align: left;
-                line-height: 24px;
+                line-height: 22px;
                 // border: 5px solid blue;
                 max-width: 410px;
             }

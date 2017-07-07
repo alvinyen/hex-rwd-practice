@@ -8,9 +8,10 @@ header {
     background-image: url(../images/header_desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1049px;
+    max-width: 960px;
     height: 420px;
     margin: 0 auto;
+    padding: 0 20px;
     .top {
       height: 56px;
       display: flex;
