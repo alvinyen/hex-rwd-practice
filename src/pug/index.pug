@@ -71,9 +71,32 @@ body
                         .content 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
                         .nickname --美麗萬分
     section.map
+        .container
+            .title 我們的位置不太夠坐<br>要不要先定位呢？
+            .content
+                img.map(src="images/Map.png", alt="")
+                form
+                    label(for="name") 姓名
+                    input(type="text" placeholder="畢業季尾牙" id="name")
+                    label(for="phone") 電話
+                    input(type="tel" placeholder="02-1234567" id="phone")
+                    label(for="email") 信箱
+                    input(type="email" placeholder="aaa123@gmail.com" id="email")
+                    label(for="participants") 人數
+                    input(type="number" placeholder="請輸入參加人數" id="participants")
+                    //- label(for="vegetarian-y") 是否需要素食
+                    //- #[input(type="radio" id="vegetarian-y" name="vegetarian" value="y")] 是
+                    //- #[input(type="radio" id="vegetarian-n" name="vegetarian" value="n")] 否
+                    .btns-section
+                        button.cancel(type="submit") 取消
+                        button.submit(type="submit") 送出
     footer  
         .about
-        .content
+            .title
+            .content
+        .contact
+            .title
+            ul.content
         .icon-and-social-menu
             h2.icon
             ul.social-menu
