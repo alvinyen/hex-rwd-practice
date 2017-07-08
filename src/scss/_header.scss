@@ -6,17 +6,21 @@ header {
   background-color: black;
   .container {
     background-image: url(../images/header_desktop.png);
-    @include desktop_min () {
-      max-width: 769px;
-      background-image: url(../images/header_tablet.png);
-      background-size: cover;
-    }
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 960px;
     height: 420px;
     margin: 0 auto;
     padding: 0 20px;
+    @include desktop_min () {
+      max-width: 769px;
+      background-image: url(../images/header_tablet.png);
+      background-size: cover;
+    }
+    @include tablet () {
+      max-width: 560px;
+      background-image: url(../images/header_mobile.png);
+    }
     .top {
       height: 56px;
       display: flex;
@@ -59,18 +63,31 @@ header {
     .bottom {
       border-color: green;
       .promotion {
-          width: 480px;
+          max-width: 480px;
           height: 152px;
           margin: 0 auto;
           margin-top: 67px;
           // margin-bottom: 145px;
           color: white;
           background: rgba(0,0,0,0.35);
+          @include tablet () {
+            height: 194px;
+          }
           h2.title {
               display: inline-block;
               font-weight: 300;
               font-size: 36px;
               margin-top: 20px;
+              @include tablet () {
+                line-height: 45px;
+              }
+              br.mob-display {
+                display: none;
+                @include tablet () {
+                  display: inline;
+                }
+              }
+              
           }
           .content {
               font-weight: 100;
