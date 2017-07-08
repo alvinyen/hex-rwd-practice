@@ -7,6 +7,9 @@ section.comments {
         @include desktop_min () {
             max-width: 769px;
         }
+        @include tablet () {
+            max-width: 560px;
+        }
         .comments-section-title {
             display: inline-block;
             font-size: 24px;
@@ -16,18 +19,28 @@ section.comments {
             @include desktop_min () {
                 font-size: 18px;
             }
+            @include tablet () {
+                font-size: 20px;
+            }
         }
         ul.comments-list {
             display: flex;
             justify-content: space-between;
             padding-right: 10px;
+            @include tablet () {
+                display: block;
+            }
             li {
                 display: flex;
                 margin-right: 20px;
                 padding-bottom: 50px;
+                @include tablet () {
+                    max-width: 300px;
+                    margin: 0 auto;
+                }
                 img { 
                     border-radius: 50%; 
-                    width: 67px;
+                    max-width: 67px;
                     height: 67px;
                     margin-right: 13px;
                 }
@@ -49,6 +62,9 @@ section.comments {
                         @include desktop_min () {
                             font-size: 14px;
                         }
+                        @include tablet () {
+                            font-size: 16px;
+                        }
                     }
                     .nickname {
                         margin-top: 16px;
@@ -56,6 +72,9 @@ section.comments {
                         text-align: right;
                         @include desktop_min () {
                             font-size: 14px;
+                        }
+                        @include tablet () {
+                            font-size: 16px;
                         }
                     }
                 }

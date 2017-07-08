@@ -62,7 +62,7 @@ section.tips {
                 display: block;
             }
             li {
-                width: 260px;
+                max-width: 260px;
                 padding: 5px;
                 // border: 2px solid green;
                 @include tablet () {
