@@ -24,6 +24,7 @@ section.tips {
             height: 64px;
             @include tablet () {
                 width: 100%;
+                // margin-bottom: 20px;
             }
             // border-color: red;
             hr {
@@ -59,15 +60,15 @@ section.tips {
             // margin-bottom: 50px;
             @include tablet () {
                 display: block;
-                li {
-                    margin: 0 auto;
-                    margin-bottom: 30px;
-                }
             }
             li {
                 width: 260px;
                 padding: 5px;
                 // border: 2px solid green;
+                @include tablet () {
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                }
                 img {
                     border-radius: 50%;
                     width: 200px;
@@ -100,6 +101,11 @@ section.tips {
                         line-height: 24px;
                         padding: 0;
                     }
+                }
+            }
+            @include tablet () {
+                li.final-li {
+                    margin-bottom: 0;
                 }
             }
 
