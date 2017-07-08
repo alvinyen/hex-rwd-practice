@@ -36,6 +36,7 @@ footer {
                 @include tablet () {
                     max-width: 100%;
                     margin: 0 auto;
+                    margin-bottom: 30px;
                 }
             }
             .title, .content, ul.content li {
@@ -64,19 +65,20 @@ footer {
         }
         .icon-and-social-menu {
             // border: 2px solid red ;
-            // border: red solid 2px;
             @include tablet () {
                 max-width: 100%;
                 margin: 0 auto;
                 text-align: right;
             }
             h2.icon {
-                display: inline-block;
-                background-image: url(../images/logo_in_footer.png);
-                max-width: 210px;
-                height: 51px;
                 @include textReplacement;
-                margin-bottom: 22px;
+                background-image: url(../images/logo_in_footer.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 211px;
+                display: inline-block;
+                height: 51px;
+                margin-bottom: 10px;
                 text-align: right;
                 // border: brown solid 2px;
             }
