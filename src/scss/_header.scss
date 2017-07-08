@@ -6,6 +6,11 @@ header {
   background-color: black;
   .container {
     background-image: url(../images/header_desktop.png);
+    @include desktop_min () {
+      max-width: 769px;
+      background-image: url(../images/header_tablet.png);
+      background-size: cover;
+    }
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 960px;

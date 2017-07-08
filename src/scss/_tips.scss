@@ -7,6 +7,9 @@ section.tips {
         margin: 0 auto;
         padding: 0 20px;
         // border: 2px solid blue;
+        @include desktop_min () {
+            max-width: 769px;
+        }
         .tips-title-block {
             position:relative;
             display: inline-block;
@@ -34,6 +37,9 @@ section.tips {
                 z-index: 5;
                 left: 50%;
                 margin: 0 -106px;
+                @include desktop_min () {
+                    font-size: 18px;
+                }
             }
         }
         ul.tips-list {
@@ -44,6 +50,7 @@ section.tips {
             li {
                 width: 260px;
                 margin-bottom: 50px;
+                padding: 5px;
                 // border: 2px solid green;
                 img {
                     border-radius: 50%;
@@ -55,12 +62,20 @@ section.tips {
                     margin-bottom: 11px;
                     font-size: 18px;
                     color: #3D1101;
+                    @include desktop_min () {
+                        font-size: 16px;
+                    }
                 }
                 .tip-content {
                     font-size: 16px;
                     color: #3D1101;
                     line-height: 24px;
                     text-align: left;
+                    @include desktop_min () {
+                        font-size: 14px;
+                        line-height: 18px;
+                        padding: 0 5px;
+                    }
                 }
             }
 

@@ -4,11 +4,17 @@ section.map {
         max-width: 960px;
         margin: 0 auto;
         padding: 50px 20px;
+        @include desktop_min () {
+            max-width: 769px;
+        }
         .title {
             color: #3D1101;
             font-size: 24px; 
             margin-bottom: 38px;
             line-height: 32px;
+            @include desktop_min () {
+                font-size: 18px;
+            }
         }
         .content {
             display: flex;

@@ -5,6 +5,9 @@ section.chef {
         margin: 0 auto;
         padding: 0 20px;
         display: flex;
+        @include desktop_min () {
+            max-width: 769px;
+        }
         img {
             max-width: 49%;
             // height: 460px;
