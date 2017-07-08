@@ -7,6 +7,9 @@ section.map {
         @include desktop_min () {
             max-width: 769px;
         }
+        @include tablet () {
+            max-width: 560px;
+        }
         .title {
             color: #3D1101;
             font-size: 24px; 
@@ -15,14 +18,23 @@ section.map {
             @include desktop_min () {
                 font-size: 18px;
             }
+            @include tablet () {
+                font-size: 24px;
+            }
         }
         .content {
             display: flex;
             justify-content: space-between;
+            @include tablet () {
+                display: block;
+            }
             img.map {
-                width: 462px;
+                max-width: 462px;
                 height: 388px;
                 margin-right: 20px;
+                @include tablet () {
+                    margin-right: 0;
+                }
             }
             form {
                 // border: 2px solid red;
@@ -32,6 +44,11 @@ section.map {
                 flex-direction: column;
                 justify-content: space-between;
                 padding-right: 10px;
+                @include tablet () {
+                    max-width: 462px;
+                    margin: 0 auto ;
+                    margin-top: 30px;
+                }
                 label, input {
                     display: block;
                     text-align: left;
@@ -44,6 +61,9 @@ section.map {
                 input {
                     height: 34px;
                     padding: 10px;
+                    @include tablet () {
+                        margin-bottom: 20px;
+                    }
                 }
                 .btns-section {
                     display: flex;

@@ -58,8 +58,10 @@ section.chef {
                 // border: 5px solid blue;
                 max-width: 410px;
                 @include tablet () {
+                    max-width: 220px;
                     font-size: 18px;
-                    text-indent: 36px;
+                    // text-indent: 36px;
+                    margin: 0 auto;
                 }
             }
         }
