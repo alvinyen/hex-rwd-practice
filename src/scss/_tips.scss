@@ -33,6 +33,9 @@ section.tips {
                 height: 3px;
                 color: #979797;
                 top: 25px;
+                @include tablet {
+                    display: none;
+                }
             }
             .tips-title {
                 padding: 0 13px;

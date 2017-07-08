@@ -17,14 +17,14 @@ footer {
         }
         .about-section {
             display: flex;
-            border: red solid 2px;
+            // border: red solid 2px;
             @include tablet () {
                 display: block;
             }
             .about {
                 max-width: 299px;
                 margin-right: 21px;
-                border: blue solid 2px;
+                // border: blue solid 2px;
                 @include tablet () {
                     max-width: 100%;
                     margin: 0 auto;
@@ -32,7 +32,7 @@ footer {
                 }
             }
             .contact {
-                border: green solid 2px;
+                // border: green solid 2px;
                 @include tablet () {
                     max-width: 100%;
                     margin: 0 auto;
@@ -64,7 +64,7 @@ footer {
         }
         .icon-and-social-menu {
             // border: 2px solid red ;
-            border: red solid 2px;
+            // border: red solid 2px;
             @include tablet () {
                 max-width: 100%;
                 margin: 0 auto;
@@ -78,7 +78,7 @@ footer {
                 @include textReplacement;
                 margin-bottom: 22px;
                 text-align: right;
-                border: brown solid 2px;
+                // border: brown solid 2px;
             }
             .social-menu {
                 display: flex;
@@ -86,7 +86,7 @@ footer {
                 // border: 2px solid red;
                 display: flex;
                 justify-content: flex-end;
-                border: brown solid 2px;
+                // border: brown solid 2px;
                 @include desktop_min () {
                     font-size: 28px;
                 }
