@@ -11,8 +11,33 @@ footer {
         @include desktop_min () {
             max-width: 769px;
         }
+        @include tablet () {
+            max-width: 560px;
+            display: block;
+        }
         .about-section {
             display: flex;
+            border: red solid 2px;
+            @include tablet () {
+                display: block;
+            }
+            .about {
+                max-width: 299px;
+                margin-right: 21px;
+                border: blue solid 2px;
+                @include tablet () {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                }
+            }
+            .contact {
+                border: green solid 2px;
+                @include tablet () {
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+            }
             .title, .content, ul.content li {
                 text-align: left;
                 color: #3D1101;
@@ -24,29 +49,36 @@ footer {
                 @include desktop_min () {
                     font-size: 18px;
                 }
+                @include tablet () {
+                    font-size: 24px;
+                }
             }
             .content {
                 @include desktop_min () {
                     font-size: 14px;
                 }
-            }
-            .about {
-                width: 299px;
-                margin-right: 21px;
+                @include tablet () {
+                    font-size: 16px;
+                }
             }
         }
         .icon-and-social-menu {
             // border: 2px solid red ;
-            padding-right: 10px;
+            border: red solid 2px;
+            @include tablet () {
+                max-width: 100%;
+                margin: 0 auto;
+                text-align: right;
+            }
             h2.icon {
                 display: inline-block;
                 background-image: url(../images/logo_in_footer.png);
-                width: 210px;
+                max-width: 210px;
                 height: 51px;
                 @include textReplacement;
                 margin-bottom: 22px;
                 text-align: right;
-                // border: 2px solid red;
+                border: brown solid 2px;
             }
             .social-menu {
                 display: flex;
@@ -54,8 +86,12 @@ footer {
                 // border: 2px solid red;
                 display: flex;
                 justify-content: flex-end;
+                border: brown solid 2px;
                 @include desktop_min () {
                     font-size: 28px;
+                }
+                @include tablet () {
+                    font-size: 36px;
                 }
                 .fa {
                     margin-right: 12px;
