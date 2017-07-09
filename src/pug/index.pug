@@ -28,18 +28,18 @@ body
                 h1.icon 
                     a(href="") 銓寶西餐廳
                 ul.menu
-                    li.menu-li
-                        a(href="") 特色
-                    li.menu-li
-                        a(href="") 主廚
-                    li.menu-li
-                        a(href="").last 地圖
+                    li.menu-li.menu-li-tips
+                        a(href="#tips") 特色
+                    li.menu-li.menu-li-chef
+                        a(href="#chef") 主廚
+                    li.menu-li.menu-li-map
+                        a(href="#map").last 地圖
                 a.a-show-menu(href="#") <i class="fa fa-bars" aria-hidden="true"></i>
             .bottom
                 .promotion
                     h2.title 咬一口<br class="mob-display">就無法忘懷的漢堡
                     .content 七夕絕對無法錯過的好滋味 </br> <i class="fa fa-cutlery" aria-hidden="true"></i> 起士雙牛堡 <i class="fa fa-cutlery" aria-hidden="true"></i>
-    section.tips
+    section.tips(id="tips")
         .container
             .tips-title-block
                 hr
@@ -57,7 +57,7 @@ body
                     img(src="images/feature_3.png", alt="")
                     .tip-title 對於專業不能退讓
                     .tip-content Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
-    section.chef 
+    section.chef(id="chef") 
         .container
             img(src="images/main_chef_brown.png", alt="").chef-photo
             .chef-description
@@ -86,7 +86,7 @@ body
                         .name 春天也來了
                         .content 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
                         .nickname --美麗萬分
-    section.map
+    section.map(id="map")
         .container
             .title 我們的位置不太夠坐<br>要不要先訂位呢？
             .content
