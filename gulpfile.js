@@ -9,7 +9,7 @@ const livereload = require('gulp-livereload');
 const stylePath = { src: './src/scss/*.scss', dest: './dist' };
 const pugPath = { src: './src/pug/*.pug', dest: './dist' };
 const scriptPath = { src: './src/js/*.js', dest: './dist' };
-const imagePath = { src: './src/images/*.*', dest: './dist/images' };
+const imagePath = { src: 'src/images/*', dest: 'dist/images' };
 
 gulp.task('sass', () => {
   return gulp.src(stylePath.src)
