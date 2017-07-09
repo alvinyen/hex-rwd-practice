@@ -9,6 +9,6 @@ app.use(bodyParser.urlencoded({ extend: true }));
 app.use(bodyParser.json());
 
 const server = http.createServer(app);
-server.listen(8090, () => {
-    console.log('server is running on port 8090');
+server.listen(8080, () => {
+    console.log('server is running on port 8080');
 });
