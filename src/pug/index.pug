@@ -6,6 +6,8 @@ head
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title hex-rwd-practice
     link(rel="stylesheet", href="all.css", type="text/css")
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js", integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
+    script(src="all.js")
 body
     header 
         .container
@@ -13,12 +15,13 @@ body
                 h1.icon 
                     a(href="") 銓寶西餐廳
                 ul.menu
-                    li
+                    li.menu-li
                         a(href="") 特色
-                    li
+                    li.menu-li
                         a(href="") 主廚
-                    li
-                        a(href="") 地圖
+                    li.menu-li
+                        a(href="").last 地圖
+                a.a-show-menu(href="#") <i class="fa fa-bars" aria-hidden="true"></i>
             .bottom
                 .promotion
                     h2.title 咬一口<br class="mob-display">就無法忘懷的漢堡

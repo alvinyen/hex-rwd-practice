@@ -1,6 +1,20 @@
 @import "mixin";
 @import "font-awesome/font-awesome";
 
+@include tablet () {
+  body.menu-show { // 要記得加上body才選得到！！
+    header {
+      .top
+        ul.menu {
+          // border-color: green;
+          max-height: 500px;
+        }
+    }
+  }
+}
+
+
+
 header {
   // border-color: blue;
   background-color: black;
@@ -25,6 +39,7 @@ header {
       height: 56px;
       display: flex;
       justify-content: space-between;
+      position: relative;
       h1.icon {
         margin-left: 42px;
         display: flex;
@@ -44,13 +59,45 @@ header {
         display: flex;
         margin-right: 48px;
         align-items: center;
+        @include tablet () {
+          // 隱藏 ul.menu
+          // border: 3px solid blue;
+          max-height: 0px;
+          overflow: hidden;
+
+          // 先把要彈出的menu、ul、li的樣式準備好
+          position: absolute;
+          top: 57px;
+          flex-direction: column;
+          width: 100%;
+          margin: 0;
+          li.menu-li {
+            margin-right: 0;
+            width: 100%;
+            a {
+              border: 2px solid red;
+              border-bottom: 0;
+              background-color: #080808;
+              padding: 5px 0;
+              &:hover {
+                background-color: #333;
+              }
+            }
+            a.last {
+               border-bottom: 2px solid red;
+            }
+          }
+
+          transition: max-height 0.5s;
+          z-index: 100;
+        }
         li {
           font-size: 16px;
           margin-right: 30px;
           a {
             text-decoration: none;
             display: block;
-            border-color: pink;
+            // border-color: pink;
             color: white;
             // height: 56px;
             &:hover {
@@ -59,9 +106,21 @@ header {
           }
         }
       }
+      a.a-show-menu {
+        color: white;
+        font-size:50px;
+        line-height: 30px;
+        // border: 2px solid red;
+        display: none;
+        &:hover {
+          color: red;
+        }
+        @include tablet () {
+          display: block;
+        }
+      }
     }
     .bottom {
-      border-color: green;
       .promotion {
           max-width: 480px;
           height: 152px;

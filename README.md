@@ -22,6 +22,7 @@
     - 用個一樣大小的.container包起來、置中
     - header背景設定與圖片背景相近的顏色
 #### { mobile-menu (hamburger) }
+- 參閱[codepen上的練習](https://codepen.io/alvinyen219/pen/BZqmvZ?editors=1111)
 - 2大重點
 - 重點1在於 a tag showmenu
     - in html：`<a href="#" class="showmenu">menu</a>`
