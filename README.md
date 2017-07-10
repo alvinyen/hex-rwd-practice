@@ -21,6 +21,7 @@
     - check背景圖片大小
     - 用個一樣大小的.container包起來、置中
     - header背景設定與圖片背景相近的顏色
+- logo一般不會設定自適應
 #### { mobile-menu (hamburger) }
 - 參閱[codepen上的練習](https://codepen.io/alvinyen219/pen/BZqmvZ?editors=1111)
 - 2大重點
@@ -103,9 +104,12 @@
 <hr>
 
 ## 『 其他重點 』
-- logo不要自適應！！
 ### [ 關於background-image ]
 #### { 關於background-size }
-- cover：維持原比例並適應區塊的大小，可能切圖。
-- contain：圖片完整的放入區塊，不會切圖，圖片未填滿的區塊部分則由background-color佔滿。
+- cover
+    - 維持原比例並適應區塊的大小，可能切圖。
+    - 適用於圖片比區塊小時，將圖片拉伸使填滿整個區塊。
+- contain
+    - 圖片完整的放入區塊，不會切圖，圖片未填滿的區塊部分則由background-color佔滿。
+    - 適用於圖片比區塊大時，讓圖片維持比例縮小，以適應整個區塊。
 - ![](https://i.imgur.com/PgZVhdC.png)
