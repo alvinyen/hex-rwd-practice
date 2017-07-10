@@ -113,3 +113,19 @@
     - 圖片完整的放入區塊，不會切圖，圖片未填滿的區塊部分則由background-color佔滿。
     - 適用於圖片比區塊大時，讓圖片維持比例縮小，以適應整個區塊。
 - ![](https://i.imgur.com/PgZVhdC.png)
+
+<hr>
+
+### [ favicon setting ]  
+- ref：[How to set custom favicon in Express?](https://stackoverflow.com/questions/15463199/how-to-set-custom-favicon-in-express)
+- `yarn add serve-favicon`
+- in index.js / server.js
+    ```
+        ...
+        const favicon = require('serve-favicon');
+        const path = require('path');
+        ...
+
+        ...
+        app.use(favicon(path.join(__dirname, 'custom path..' [, custom path..], 'favicon.ico')));
+    ```
