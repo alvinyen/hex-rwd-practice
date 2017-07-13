@@ -61,8 +61,9 @@ section.map {
                     font-size: 14px;
                 }
                 input {
+                    box-sizing: border-box;
                     height: 34px;
-                    padding: 10px;
+                    padding: 5px;
                     @include tablet () {
                         margin-bottom: 20px;
                     }
